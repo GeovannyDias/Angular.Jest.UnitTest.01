@@ -1,2 +1,2 @@
-# Angular.Jest.UnitTest.01
+# Angular, Jest, UnitTest
 Unit Test with Angular and Jest
