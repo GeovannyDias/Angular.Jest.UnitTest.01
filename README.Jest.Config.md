@@ -54,7 +54,11 @@ import 'jest-preset-angular/setup-jest';
 8. Warning (esModuleInterop - tsconfig.json)
 
 ```
-ts-jest[config] (WARN) message TS151001: If you have issues related to imports, you should consider setting `esModuleInterop` to `true` in your TypeScript configuration file (usually `tsconfig.json`). See https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability for more information.
+ts-jest[config] (WARN) message TS151001: If you have issues related to imports, 
+you should consider setting `esModuleInterop` to `true` in your TypeScript 
+configuration file (usually `tsconfig.json`). See 
+https://blogs.msdn.microsoft.com/typescript/2018/01/31/announcing-typescript-2-7/#easier-ecmascript-module-interoperability 
+for more information.
 
 
 
