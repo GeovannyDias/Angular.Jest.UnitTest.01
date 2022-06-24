@@ -1,0 +1,73 @@
+.b-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.b-form__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #777;
+}
+
+.b-form__form-content {
+  display: flex;
+  flex-direction: column;
+  width: 100% !important;
+}
+
+.b-form__input-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 8px 0;
+}
+
+.b-form__input {
+  width: 300px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+}
+
+.b-form__textarea {
+  width: 300px;
+  height: 60px;
+  border-radius: 4px;
+  border: 1px solid #e7e7e7;
+}
+
+.b-form__btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.b-form__btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  background-color: red;
+  color: #ffffff;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+.b-form__btn:hover {
+  outline: none;
+  border: 1px solid rgba(80, 80, 80, 0.3);
+  background: var(--color-btn);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.b-form__btn:disabled {
+  background-color: #ff8989;
+  cursor: default;
+}

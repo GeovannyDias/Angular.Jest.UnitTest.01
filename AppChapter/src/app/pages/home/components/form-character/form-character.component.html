@@ -1,0 +1,26 @@
+<form class="b-form" [formGroup]="myForm" (ngSubmit)="onSave()">
+    <div class="b-form__title">{{title}}</div>
+    <div class="b-form__form-content">
+        <div class="b-form__input-group">
+            <div>Nombre:</div>
+            <input type="text" placeholder="Nombre del personaje" class="b-form__input" formControlName="title"
+                [ngClass]="isValidField('title')">
+        </div>
+
+        <div class="b-form__input-group">
+            <div>Descrición:</div>
+            <textarea name="" placeholder="Descripción" id="" cols="0" rows="4" class="b-form__textarea"
+                formControlName="body" [ngClass]="isValidField('body')"></textarea>
+        </div>
+
+        <div class="b-form__input-group">
+            <div>Imagen:</div>
+            <input type="text" placeholder="URL" class="b-form__input" formControlName="image"
+                [ngClass]="isValidField('image')">
+        </div>
+    </div>
+    <div class="b-form__btn-container">
+        <button type="submit" class="b-form__btn" [disabled]="!myForm.valid">Guardar</button>
+        <button type="button" class="b-form__btn" (click)="onCancel()">Cancelar</button>
+    </div>
+</form>

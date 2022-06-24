@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #0f265c;
+  --color-secondary: #555555;
+  --color-bg-navbar: #151515;
+  --color-bg-container: #F7F7F7;
+  --color-btn: #151515;
+}
+
+body {
+  background-color: var(--color-bg-container);
+}

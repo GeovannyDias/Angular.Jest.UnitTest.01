@@ -1,0 +1,8 @@
+<div class="b-card" *ngIf="character">
+    <img class="b-card__image" [src]="character.image" [alt]="character.title">
+    <div class="b-card__title">{{ character.title }}</div>
+    <div class="b-card__btn-container">
+        <button class="b-card__btn" (click)="buttonAction('edit', character)"> 🖉 </button>
+        <button class="b-card__btn" (click)="buttonAction('delete', character)"> 🗑 </button>
+    </div>
+</div>

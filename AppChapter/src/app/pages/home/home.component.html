@@ -1,0 +1,30 @@
+<div class="content">
+    <div class="input-container">
+        <app-search class="search-component" (emitSearchText)="searchCharacter($event)"></app-search>
+        <button class="btn-new" (click)="openForm('new')">+ Nuevo</button>
+    </div>
+
+    <div class="form-container" *ngIf="isOpenForm">
+        <app-form-character [action]="action" [title]="title" [character]="dataCharacter" (emitButtonForm)="getCharacters()" class="form-component">
+        </app-form-character>
+    </div>
+
+    <div class="card-container">
+        <ng-container *ngFor="let character of dataCharacters | filter:page:searchText">
+            <app-card-character [character]="character" (emitButton)="actionButton($event)"></app-card-character>
+        </ng-container>
+    </div>
+
+    <div class="btn-container"
+        *ngIf="dataCharacters.length !== 0">
+        <button class="btn" (click)="prevPage()">&#10094;&#10094; Previous</button>
+        <button class="btn" (click)="nextPage()" [disabled]="(dataCharacters | filter:page:searchText).length < 6">
+            Next &#10095;&#10095;
+        </button>
+    </div>
+
+    <ng-container *ngIf="dataCharacters.length === 0 || (dataCharacters | filter:page:searchText).length === 0">
+        <p>No results found.</p>
+    </ng-container>
+
+</div>

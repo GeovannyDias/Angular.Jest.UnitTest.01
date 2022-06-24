@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "test-geod"
+  },
+  "targets": {
+    "test-geod": {
+      "hosting": {
+        "app-marvel": [
+          "test-geo-app-marvel"
+        ]
+      }
+    }
+  }
+}
