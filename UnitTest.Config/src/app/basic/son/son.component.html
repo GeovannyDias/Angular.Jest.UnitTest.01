@@ -1,0 +1,6 @@
+<h5>Son Component</h5>
+<code>{{ client | json }}</code>
+<br><br>
+
+<button *ngIf="client" class="btn btn-outline-primary m-2" (click)="onChangeId(5)" data-test="btn-change-id">Change ID</button>
+<button *ngIf="client" class="btn btn-outline-danger m-2" (click)="onDelete()" data-test="btn-delete">Delete Client</button>

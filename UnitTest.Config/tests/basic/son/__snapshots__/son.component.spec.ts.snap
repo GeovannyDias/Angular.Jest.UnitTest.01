@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SonComponent should do match to snapshot 1`] = `
+<div
+  id="root1"
+>
+  <h5>
+    Son Component
+  </h5>
+  <code>
+    
+  </code>
+  <br />
+  <br />
+  
+  
+</div>
+`;
+
+exports[`SonComponent should do match to snapshot, if exist client 1`] = `
+<div
+  id="root4"
+>
+  <h5>
+    Son Component
+  </h5>
+  <code>
+    {
+  "id": 1,
+  "name": "Geovanny"
+}
+  </code>
+  <br />
+  <br />
+  <button
+    class="btn btn-outline-primary m-2"
+    data-test="btn-change-id"
+  >
+    Change ID
+  </button>
+  
+  <button
+    class="btn btn-outline-danger m-2"
+    data-test="btn-delete"
+  >
+    Delete Client
+  </button>
+  
+</div>
+`;
