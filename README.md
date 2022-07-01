@@ -21,19 +21,6 @@ ng serve --open
 
 ```
 
-## Run - Unit Test
-
-```
-
-ng test --code-coverage
-
-
-See coverage report run index.html file:
-
-$ cd \AppChapter\coverage\AppChapter\index.htm
-
-```
-
 ## INTERACTIVE API TESTER
 
 * **https://documenter.getpostman.com/view/13245906/UVsEUURp#895ae888-1a5d-4d48-aeb0-223215f14373**
