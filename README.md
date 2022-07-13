@@ -143,6 +143,34 @@ detectando malas prácticas, posibles errores y bugs.
 
 
 
+## Entendiendo Code coverage usando Jest
+* **https://jackfiallos.com/entendiendo-code-covereage-usando-jest**
+
+```
+Este es el informe generado con las pruebas del archivo isImage.spec.js. 
+Y este Informe dice que del 100% del umbral de cobertura esperado a cubrirse, 
+solamente el 85.71% fue satisfactoriamente probado y revisado, aparte de que 
+se alcanzó a verificar el 85.71% para statements (Stmts), 50% de Branches, 
+100% de funciones (Funcs) y 85.71% de líneas funcionales (Lines) y que se quedaron 
+11 líneas de código sin revisar.
+
+Y para entender mejor que significa cada una de las columnas:
+
+
+-Stmts Se refiere a todas las delcaraciones del programa.
+
+-Branch Se refiere a cada rama (también denominada ruta DD) de cada estructura de control 
+(como en las declaraciones if y case), por ejemplo, dada una declaración if, 
+¿se han ejecutado las ramas verdadera y falsa? Otra forma de decir esto es, 
+¿se han ejecutado todos los bordes del programa?.
+
+-Funcs Se refiere al llamado de las funciones o subrutinas del programa.
+
+-Lines Se refiere a cada línea ejecutable en el archivo fuente.
+
+```
+
+
 ## Result
 
 ![image](https://user-images.githubusercontent.com/23192401/160305856-a2d15c63-eea7-4ff9-8d77-50ae1bedd7f2.png)
